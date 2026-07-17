@@ -64,14 +64,59 @@ body{
   align-items:center;
   justify-content:space-between;
   padding:14px 0;
-  gap:16px;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.headerRight{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
 }
 
 .brand{
   display:flex;
   align-items:center;
   gap:12px;
-  min-width:220px;
+  min-width:0;
+}
+
+.langSwitch{
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  padding:4px;
+  border-radius:999px;
+  border:1px solid rgba(15, 23, 42, .10);
+  background: rgba(255,255,255,.72);
+}
+
+.langSwitch a{
+  text-decoration:none;
+  color: rgba(15, 23, 42, .70);
+  font-weight:800;
+  font-size:12px;
+  letter-spacing:.02em;
+  padding:6px 10px;
+  border-radius:999px;
+  transition: background .15s ease, color .15s ease;
+}
+
+.langSwitch a:hover{
+  background: rgba(47,111,237,.10);
+  color: rgba(15, 23, 42, 1);
+}
+
+.langSwitch a.is-active{
+  background: rgba(47,111,237,.16);
+  color: rgba(15, 23, 42, 1);
+}
+
+.langSwitch a:focus-visible{
+  outline:3px solid rgba(47,111,237,.25);
+  outline-offset:2px;
 }
 .brandIcon{
   width:40px;
